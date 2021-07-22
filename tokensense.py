@@ -124,7 +124,7 @@ elif pages == 'Activity vs. Price':
     
     make_title(pages, 'white')
     
-    blurb('This dashboard shows various activity metrics, plotted against Bitcoin price (log scale).  Activity metrics included trading volume (Coinbase), ' +
+    blurb('This dashboard shows various activity metrics, plotted against Bitcoin price (log scale).  Activity metrics include trading volume (Coinbase), ' +
           'active addresses, Google trends data, and number of Reddit comments on the daily discussion thread.', 'white')
     blurb('A date can be selected in the far right container. The red dots in the box plots show the level of each metric for the selected date.', 'white')
     blurb('Use the date range selector to adjust the dates shown. This also adjusts the data fed to the boxplots, color coding, and the remainder of the dashboard.', 'white')
@@ -139,11 +139,11 @@ elif pages == 'Sentiment Cluster Analysis':
     
     make_title(pages, 'white')
     
-    blurb('This dashboard is the result of machine learning clustering exercise. Colors in the area charts represent the cluster assigned to each date, while the ' +
+    blurb('This dashboard is the result of a machine learning clustering exercise. Colors in the area charts represent the cluster assigned to each date, while the ' +
           'level of each chart represents the level of the relevant metric on that date. Dates are clustered based on price levels, activity metrics, and ' +
           'sentiment metrics. These include Price vs. All-Time High, Net Unrealized Profit/Loss, Net Transfer Volume, Active Addresses, Google Activity, ' +
           'Reddit Activity, Reddit Polarity, Reddit Subjectivity, News Article Polarity, and News Article Subjectivity.', 'white')
-    blurb('Clustering methods available include:  K-Means (6 clusters), K-Means (9 clusters), Gaussian Mixture (6 clusters), Hierarchical Agglomerative Clustering ' +
+    blurb('Clustering methods available include K-Means (6 clusters), K-Means (9 clusters), Gaussian Mixture (6 clusters), and Hierarchical Agglomerative Clustering ' +
           '(6 clusters).', 'white')
     blurb('Polarity is a measure of positivity/negatitivity. Subjectivity is a measure of how opinionated a comment or article is. These were calculated using TextBlob.',
           'white')
@@ -162,7 +162,7 @@ if pages == 'Topic Modeling Over Time':
     blurb('Topic modeling was performed using the Gensim library. TextBlob was used to assess polarity, a measure of positivity/negativity of news articles. ', 'white')
     blurb('Highlight topics by clicking on the color coded legend in the far right container or by searching in the Highlight Topic Label box.', 'white')
     blurb('Change the date aggregation to "Month" or "Year" using the Date Level selector.', 'white')
-    blurb('Note that the topic Community (Games, Charity) is excluded by default due to a small number of articles producing erratic polarity data. You can add it back by removing. ' +
+    blurb('Note that the Community (Games, Charity) topic is excluded by default due to a small number of articles producing erratic polarity data. You can add it back by removing. ' +
           'the Topic Label filter.', 'white')
     
     html = """
@@ -179,7 +179,7 @@ elif pages == 'Topic Polarity vs. Subjectivity':
           'subjectivity, a measure of how opinionated an article is.', 'white')
     blurb('The size of the bubbles represents the number of articles where the relevant topic had a dominant share (Dominant Articles).', 'white')
     blurb('The Dominant Share % can be adjusted in the far right container. Perhaps you only want to see sentiment metrics for articles made up at least 50% by the '+
-          'relevant topic, for example.', 'white')
+          'dominant topic, for example.', 'white')
     
     html = """
     <div class='tableauPlaceholder' id='viz1626286247872' style='position: relative'><noscript><a href='#'><img alt='Topic Polarity and Subjectivity ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TokenSense-BitcoinSentimentAnalysis&#47;TopicPolarityandSubjectivity&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TokenSense-BitcoinSentimentAnalysis&#47;TopicPolarityandSubjectivity' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TokenSense-BitcoinSentimentAnalysis&#47;TopicPolarityandSubjectivity&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1626286247872');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1500px';vizElement.style.height='927px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1500px';vizElement.style.height='927px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
