@@ -164,4 +164,4 @@ My ultimate goal for topic modeling was to generate clearly unique topics from n
 
 ## Communication
 
-I developed a cohesive theme that persists across my [presentation slides]() and my TokenSense [web application](https://share.streamlit.io/drwismer/metis_unsupervised_learning_module/main/tokensense.py). With TokenSense, I strived to tell stories with the data and empower the user to discover their own stores. Each dashboard serves its own purpose to help the user dig into interesting trends in the sentiment of the Bitcoin community.
+I developed a cohesive theme that persists across my [presentation slides](https://github.com/drwismer/metis_unsupervised_learning_module/blob/main/writeups/tokensense_slides.pdf) and my TokenSense [web application](https://share.streamlit.io/drwismer/metis_unsupervised_learning_module/main/tokensense.py). With TokenSense, I strived to tell stories with the data and empower the user to discover their own stores. Each dashboard serves its own purpose to help the user dig into interesting trends in the sentiment of the Bitcoin community.
