@@ -68,14 +68,14 @@ def show_plotly(df):
 # ----------------- Streamlit Page Construction ----------------- #
 
 pages = st.sidebar.selectbox('',
-                             ('Daily Sentiment Dashboard', 
-                              'Reddit Sentiment',
-                              'Activity vs. Price',
-                              'Sentiment Cluster Analysis',
-                              'Topic Modeling Over Time', 
+                             ('Topic Modeling Over Time', 
                               'Topic Polarity vs. Subjectivity',
                               'Topic Deep Dive',
-                              'Latent Dirichlet Allocation Viz'
+                              'Latent Dirichlet Allocation Viz',
+                              'Daily Sentiment Dashboard', 
+                              'Reddit Sentiment',
+                              'Activity vs. Price',
+                              'Sentiment Cluster Analysis'                              
                              ))
 st.sidebar.write('---')
 st.sidebar.write("""TokenSense was built by David Wismer. Find me on [LinkedIn](https://www.linkedin.com/in/david-wismer-0a940656/).""")
