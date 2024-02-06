@@ -9,7 +9,7 @@ This project was built as part of the Natural Language Processing (NLP) and Unsu
 This was my process. Visit the linked Jupyter notebooks for details:
 
 **Data Gathering**
-- [Web Scraping](https://github.com/drwismer/metis_unsupervised_learning_module/blob/main/Bitcoin%20Sentiment%20-%20Web%20Scraping%20-%20Articles.ipynb) - I scraped over 60,000 from four different Bitcoin related news websites. Only 19,000 of these were used in topic modeling and sentiment analysis due to a sparcity of data for earlier dates. The articles range from January 2017 through June 2021.
+- [Web Scraping](https://github.com/drwismer/metis_unsupervised_learning_module/blob/main/Bitcoin%20Sentiment%20-%20Web%20Scraping%20-%20Articles.ipynb) - I scraped over 60,000 articles from four different Bitcoin related news websites. Only 19,000 of these were used in topic modeling and sentiment analysis due to a sparcity of data for earlier dates. The articles range from January 2017 through June 2021.
 - [Google and Reddit Data](https://github.com/drwismer/metis_unsupervised_learning_module/blob/main/update_db_sentiment.ipynb) - This project also included Google trends data and Reddit comments, both the actual text and some associated metadata. I used PyTrends and PRAW to collect this data.
 - [Financial Data](https://github.com/drwismer/metis_unsupervised_learning_module/blob/main/update_db_financial.ipynb) - I also included financial data, specifically price and volume information and on-chain metrics. Price and volume information was obtained using jesse.trade and on-chain metrics were obtained using the Glassnode API. Note that Glassnode requires a subscription.
 
